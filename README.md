@@ -71,3 +71,5 @@ npm run dev
 - `npm run lint` - Запуск ESLint
 - `npm run lint:fix` - Исправление ошибок через ESLint
 - `npm test` - Запуск тестов
+- `npm run test:coverage` - Генерация отчёта о покрытии кода тестами
+- `npm run test:watch` - Тесты в режиме отслеживания

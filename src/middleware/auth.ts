@@ -21,7 +21,7 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
         const user = await userRepository.findOne({ where: { id: decoded.userId } });
 
         if (!user || user.status === 'blocked') {
-            res.status(401).json({ error: 'Invalid token or user is blocked.' });
+            res.status(401).json({ error: 'Invalid token.' });
             return;
         }
 
