@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
-import { IsEmail, IsNotEmpty, Length, IsEnum, IsBoolean, IsDateString } from 'class-validator';
+import { IsEmail, IsNotEmpty, Length, IsEnum, IsDateString } from 'class-validator';
 
 export enum UserRole {
     ADMIN = 'admin',

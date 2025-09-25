@@ -1,7 +1,7 @@
 import { Response, NextFunction } from 'express';
 import { AppDataSource } from '../config/database';
 import { User, UserStatus } from '../entities/User';
-import { AuthRequest, authorizeAdmin, authorizeSelfOrAdmin } from '../middleware/auth';
+import { AuthRequest } from '../middleware/auth';
 
 export class UserController {
     // Get all users (admin only)
